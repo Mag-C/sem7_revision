@@ -1,0 +1,295 @@
+/*---------- RESET ----------*/
+
+html{
+
+    box-sizing: border-box;
+    font: 62.5% "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after{
+
+    box-sizing: inherit;
+
+}
+
+/*---------- Base ----------*/
+
+body{
+
+    font: 1.8rem "Roboto", sans-serif;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+.wrapper{
+
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+/*----------- Header ----------*/
+
+header{
+
+    background-color: #379AE3;
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 66px;
+    z-index: 2;
+
+}
+
+header .wrapper{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 66px;
+
+}
+
+.logo{
+
+    font: bold 2.4rem "Merriweather", serif;
+    text-transform: uppercase;
+    margin: 0;
+    color: black;
+
+}
+
+nav ul{
+
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+}
+
+header nav a{
+    
+    font: bold 1.8rem "Roboto", sans-serif;
+    color: black;
+
+}
+
+header nav a:hover{
+
+    color: #E6EDF1;
+
+}
+
+.button_header{
+
+    color: black;
+    padding: 7px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 700;
+
+}
+
+/*----------- Hero -----------*/
+
+.hero{
+
+    background-image: url(../images/Hero\ image\ droite\ \(1\).png);
+    height: 640px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-top: 66px;
+}
+
+.hero .wrapper{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+}
+
+.content{
+
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 437px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+h1{
+
+    color: #E67522;
+    font: bold 6.4rem "Merriweather", serif;
+    text-align: center;
+    margin: 0;
+}
+
+.content p{
+
+    color: white;
+    text-align: center;
+    font: bold 2rem/150% "Roboto", sans-serif;
+    margin: 0;
+
+}
+
+.content a{
+
+    background-color: #E67522;
+    padding: 7px 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+/*---------- Circuits ----------*/
+
+.contenu{
+
+    background-color: #E6EDF1;
+    text-align: center;
+}
+
+.contenu .wrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+h2{
+
+    margin: 0;
+    padding-top: 100px;
+    font: bold 6.4rem/115% "Merriweather", serif;
+    
+}
+
+.circuit_text_haut{
+
+    width: 800px;
+
+}
+
+.circuits{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 70px 0 100px ;
+
+}
+
+article{
+
+    width: 370px;
+    height: 785px;
+    background-color: white;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    
+}
+
+h3{
+
+    font: bold 3.6rem "Merriweather", serif;
+    margin-bottom: 0;
+}
+
+article p{
+
+    margin: 30px 0 20px;
+}
+
+article a{
+
+    border: 2px solid #3D3D3D;
+    border-radius: 5px;
+    background-color: #E67522;
+    padding: 10px 20px;
+    height: 42px;
+    width: 160px;
+    color: black;
+}
+
+.premier{
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 1;
+
+}
+
+article a{
+
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 38px;
+
+}
+
+/*---------- FOOTER -----------*/
+
+footer{
+
+    background-color: #CCDAE3;
+
+}
+
+
+.icons{
+
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons a {
+    color: #fff;
+    background-color: #E67522;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.material-symbols-outlined{
+
+    font-size: 5.6rem;
+
+}
+
+footer p{
+
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+
+
+
