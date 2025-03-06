@@ -1,27 +1,28 @@
 
-const boutonsModale = document.querySelectorAll('.bouton');
+
+
+const boutonSavoir = document.querySelectorAll('.boutonS');
 const modale = document.querySelector('.modale');
+const bg =document.querySelector('.bgnoir');
 
-for (let i = 0; i < boutonsModale.length; i++){
+for (let i = 0; i< boutonSavoir.length; i++){
 
-    boutonsModale[i].addEventListener('click', openModale);
-    
-    
+    boutonSavoir[i].addEventListener('click', openModale);
+
 }
 
 function openModale(){
-
     
-    const image = document.createElement('p');
+  // console.log(boutonSavoir.length);
+  modale.classList.add('visible');
+  bg.classList.add('visible');
 
-
-    image.addEventListener("click", closeModale);
-
+    modale.addEventListener('click', closeModale);
 }
 
-function closeModale(event){
+function closeModale(){
 
-    modale.removeChild(event.target);
     modale.classList.remove('visible');
+    bg.classList.remove('visible');
 
 }

@@ -215,7 +215,7 @@ h3{
 
 article p{
 
-    margin: 30px 0 20px;
+    margin: 30px 20px 0;
 }
 
 article a{
@@ -227,6 +227,7 @@ article a{
     height: 42px;
     width: 160px;
     color: black;
+    cursor: pointer;
 }
 
 .premier{
@@ -291,5 +292,41 @@ footer p{
     padding-bottom: 60px;
 }
 
+div.modale{
 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    right: 0;
+    height: 600px;
+    width: 800px;
+    z-index: 10;
+    background-color: rgb(100%, 100%, 100%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font: bold 5rem "Merriweather", serif;
+    cursor: pointer;
+
+}
+
+div.bgnoir.visible{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    z-index:11;
+    height: 100%;
+    width: 100%;
+}
+
+div.modale.visible{
+
+    display: flex;
+
+}
 
